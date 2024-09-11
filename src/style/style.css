@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Vazir";
+  src: url(../font/Vazir.ttf);
+}
+
+body {
+  font-family: "Vazir";
+}
+
+.container {
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.bg-primary {
+  background-color: #0d6efd;
+}
+
+.text-white{
+    color: #fff;
+}
+
+header {
+  padding: 10px 0;
+}
+
+header nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.btn-sign-in {
+  border: 1px solid #e9eaee;
+  padding: 5px;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-thunder {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-sign-in-2,.btn-thunder-2{
+    display: none;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.left-side {
+  justify-content: flex-end;
+}
+
+
+
+.btn-menu {
+  background-color: #e9eaee;
+  padding: 5px;
+  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.nav-search {
+  display: none;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+}
+
+.search-bar ::placeholder {
+  text-align: right;
+  margin-right: 20%;
+}
+
+.search-bar::before {
+  position: absolute;
+  content: url("../images/header-lcon/search.png");
+  z-index: 1;
+  top: 40%;
+  right: 3%;
+}
+
+.search-bar input {
+  border: none;
+  width: 100%;
+  background-color: #e9eaee;
+  padding: 10px 40px 10px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+
+
+  header nav{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+
+  .search-bar{
+    display: none;
+  }
+  
+  .nav-search {
+    display: block;
+  }
+
+  .btn-menu{
+    display: none;
+  }
+
+  .nav-search input{
+    background: #e9eaee;
+    border: none;
+    padding: 10px 40px 10px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-right: 5%;
+  }
+
+  .btn-sign-in,.btn-thunder{
+    display: none;
+  }
+
+  .btn-sign-in-2 {
+    border: 1px solid #e9eaee;
+    padding: 7px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.btn-thunder-2 {
+    margin-right: 10px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    cursor: pointer;
+}
+}
