@@ -16,10 +16,10 @@ body {
 }
 
 .container {
-  width: 92%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 
 .flex {
   display: flex;
@@ -39,6 +39,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.hidden{
+  display: none;
 }
 
 header {
@@ -182,8 +186,53 @@ header nav {
   cursor: pointer;
 }
 
-.hero-img{
+.hero-mobile-img{
   margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px; 
+  }
+}
+
+@media (min-width:1200px){
+
+  .hero-mobile-img{
+    display: none ;
+  }
+  
+  .hero-imgs{
+    display: block;
+    position: relative;
+    margin-top: 100px;
+  }
+
+
+  .img-right{
+    position: absolute;
+    top: -20%;
+    right: -3%;
+  }
+
+  .img-left{
+    position: absolute;
+    top: 68%;
+    left: -4%;
+  }
 }
 
 @media screen and (min-width: 768px) {
