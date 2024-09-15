@@ -193,37 +193,10 @@ header nav {
 
 /* hero-Information */
 
-/* .information-box{
-  gap: 2rem 0;
-  margin: 8rem 0;
-}
-
-.information-box{
-  width: 100%;
-  position: relative;
-  align-items: center;
-  gap: 1rem;
-}
-
-.information-box::before{
-  position: absolute;
-  content: "";
-  width: 5rem;
-  height: 5rem;
-  background: #ffecb3;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.information-box p{
-  margin-right: 2rem;
-  font-size: 1.2rem;
-} */
-
 main .information {
   display: grid;
   gap: 4rem 0;
-  margin: 10rem 0;
+  margin: 5rem 0;
 }
 main .information .info {
   position: relative;
@@ -251,6 +224,63 @@ main .information .info::before {
 .information .info-caption {
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+
+/* company */
+
+.company{
+  display: grid;
+  gap: 5rem 0;
+}
+
+
+.company-card{
+  position: relative;
+  text-align: center;
+}
+
+
+.company-card img{
+ width: 14rem;
+ z-index: 1;
+}
+
+.company-card p{
+margin-top: 30px;
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+
+.company-card:nth-child(1) .border{
+  position: absolute;
+  width: 100%;
+  padding: 3.5rem 0;
+  background-color: #AECFFE;
+  top: 23%;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.company-card:nth-child(2) .border{
+  position: absolute;
+  width: 100%;
+  padding: 3.5rem 0;
+  background-color: #438efd;
+  top: 23%;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.company-card:nth-child(3) .border{
+  position: absolute;
+  width: 100%;
+  padding: 3.5rem 0;
+  background-color: #287EFD;
+  top: 23%;
+  z-index: -1;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -389,6 +419,16 @@ main .information .info::before {
     padding: 150px 0;
   }
 
+
+
+}
+
+
+@media screen and (min-width:992px) {
+  .company{
+    grid-template-columns: repeat(3,1fr);
+    gap: 0 5rem;
+  }
 }
 
 
