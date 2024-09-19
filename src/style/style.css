@@ -378,6 +378,56 @@ main .information .info::before {
 }
 
 
+/* opportunity */
+
+.opportunity{
+  padding: 100px 0;
+}
+
+.opportunity-title{
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  gap: 0 1.5rem;
+}
+
+.opportunity-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 10px;
+  display: none;
+}
+.opportunity-text {
+  color: #737993;
+  font-weight: bold;
+}
+
+.opportunity-box{
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding: 10px 15px;
+  min-width: 250px;
+  min-height: 220px;
+  display: grid;
+  align-content: space-around;
+}
+
+.opportunity-box img{
+  margin: 0 auto;
+}
+
+.opportunity-box p{
+  font-size: 20px;
+  font-weight: 600;
+}
+  
+
+.opportunity .wrapper{
+  gap: 0 2.5rem;
+  
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;
@@ -551,11 +601,19 @@ main .information .info::before {
     justify-content: space-between !important;
   }
 
+  .img-arrow{
+    display: none;
+  }
+
+  .opportunity-line{
+    display: block;
+  }
 }
 
 @media (min-width: 1800px) {
   .bg-popular-company{
     background-size: cover;
   }
+
 
 }
