@@ -319,7 +319,7 @@ main .information .info::before {
 /* popular-company */
 
 
-.bg-popular-company{
+.bg-popular-company,.newsletter{
   background-image: url("../images/bg-company.png");
   width: 100%;
   background-size: contain;
@@ -327,7 +327,7 @@ main .information .info::before {
   padding-top: 50px;
 }
 
-.popular-company-title{
+.popular-company-title,.newsletter-title{
   justify-content: space-between;
   margin-top: 50px;
 }
@@ -425,8 +425,48 @@ main .information .info::before {
 
 .opportunity .wrapper{
   gap: 0 2.5rem;
-  
 }
+
+
+/* newsletter */
+
+
+.newsletter-description{
+  padding: 20px;
+  gap: 0 1rem;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.newsletter-item{
+  background-color: #fff;
+  border-radius: 50px;
+  margin-left: 20px;
+  text-align: auto;
+  width: 392px;
+}
+
+
+.newsletter-item p:nth-child(1){
+  color: #737993;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.newsletter-item p:nth-child(2){
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter-item p:nth-child(3){
+  color: #5B6176;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+
+
 
 @media (max-width: 1200px) {
   .container {
@@ -611,7 +651,7 @@ main .information .info::before {
 }
 
 @media (min-width: 1800px) {
-  .bg-popular-company{
+  .bg-popular-company,.newsletter{
     background-size: cover;
   }
 
